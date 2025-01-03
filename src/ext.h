@@ -157,7 +157,10 @@ typedef cl_bitfield         cl_device_svm_capabilities;
 
 typedef cl_bitfield	cl_device_atomic_capabilities;
 typedef cl_bitfield	cl_device_device_enqueue_capabilities;
+
+#if !defined(CL_USE_DEPRECATED_OPENCL_1_1_APIS)
 typedef cl_uint		cl_version;
+#endif
 
 #define CL_NAME_VERSION_MAX_NAME_SIZE 64
 
